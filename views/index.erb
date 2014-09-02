@@ -1,0 +1,17 @@
+<html>
+	<h1>hello Hello Kitty!!</h1>
+	 <div style='border: 3px dashed red'>
+	 	<!-- My name is <%= @name %> -->
+	 	<% if @visitor %>
+	 	<br />
+	 	Hello, <%= @visitor %>!
+	 	<% else %>
+	 	<form action='/hello'>
+	 		What's your name?
+	 		<input type="text" name="name">
+	 		<input type="submit">
+	 	</form>
+	 	<% end %>
+    	<img src='/images/kitten.png'>
+    </div>
+</html>
